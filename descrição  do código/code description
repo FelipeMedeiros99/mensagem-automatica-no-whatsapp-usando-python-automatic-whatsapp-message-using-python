@@ -1,0 +1,16 @@
+"""
+este projeto serve para automatizar o envio de mensagens no whatsapp.
+
+inicialmente o código cria dois documentos na área de trabalho, um chamado "contatos" onde serão armazenados os contatos 
+que receberão as mensagens  e o outro chamado "texto automatico" que receberá a mensagem que você deseja enviar. 
+
+coloque os contatos um embaixo do outro da seguinte forma para que o programa consiga ler os contatos:
+9999999999
+
+o programa filtra somente os números, não sendo necessário se preocupar com caracteres especiais ou letras, pois os mesmos não interferem na execução:
+(99) 9 9999 - 9999 (funciona)
+(99) 99999 - 9999 (funciona)
+9d9s9d9a9s9d9q9we9w9e9dq9 (funciona rs)
+
+obs: o código foi escrito para executar através do goolge, mas você pode selecionar o navegador nas bibliotecas 
+""""
