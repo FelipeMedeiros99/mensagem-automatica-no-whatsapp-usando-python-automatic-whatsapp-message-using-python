@@ -1,6 +1,7 @@
-from contatos import lista_de_contatos, exibicao_lista_telefonica
-from processo_de_envio import gerador_de_links, abrir_conversa, fechar_navegador
-from arquivos import busca_texto_e_envia, documento, lista_de_contatos as cont
+from libs.contatos import lista_de_contatos, exibicao_lista_telefonica
+from libs.processo_de_envio import gerador_de_links, abrir_conversa, fechar_navegador
+from libs.arquivos import busca_texto_e_envia, documento, lista_de_contatos as cont
+
 
 # criando os documentos antes de tudo para economizar tempo
 documento()
