@@ -12,5 +12,33 @@ o programa filtra somente os números, não sendo necessário se preocupar com c
 (99) 99999 - 9999 (funciona)
 9d9s9d9a9s9d9q9we9w9e9dq9 (funciona rs)
 
-obs: o código foi escrito para executar através do goolge, mas você pode selecionar o navegador nas bibliotecas 
+obs: o código foi escrito para executar através do goolge, mas você pode selecionar o navegador na biblioteca 'abrir_conversa()' alterando o 
+pyautogui.write('google')  
+
+obs2: o código do link direciona para contatos brasileiros, sendo necessário alterar o digito do país na biblioteca 'link_bruto()' 
+na variável 'codigo_do_pais' e colocar o do país desejado
+
+
+#######################################################################################################################################################
+
+this project is used to automate sending messages on whatsapp.
+
+initially the code creates two documents on the desktop, one called "contatos" where the contacts will be stored
+that will receive the messages and the other called "texto automatico" that will receive the message you want to send.
+
+place the contacts one under the other as follows so that the program can read the contacts:
+9999999999
+
+the program filters only the numbers, not being necessary to worry about special characters or letters, because they do not interfere in the execution:
+(99) 9 9999 - 9999 (works)
+(99) 99999 - 9999 (works)
+9d9s9d9a9s9d9q9we9w9e9dq9 (works lol)
+
+obs: the code was written to run through goolge, but you can select the browser in the libraries 'abrir_conversa()' changing the
+pyautogui.write('google')
+
+obs2: the link code directs to Brazilian contacts, being necessary to change the country digit in the 'link_bruto()' library
+in the variable 'codigo_do_pais' and put the desired country
 """"
+
+
