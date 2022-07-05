@@ -2,14 +2,15 @@ from libs.contatos import lista_de_contatos, exibicao_lista_telefonica
 from libs.processo_de_envio import gerador_de_links, abrir_conversa, fechar_navegador
 from libs.arquivos import busca_texto_e_envia, documento, lista_de_contatos as cont
 
-
 # criando os documentos antes de tudo para economizar tempo
 documento()
 cont()
 
 # inserindo os contatos
 contatos = lista_de_contatos()
-
+print(f'{"-="*24}\n'
+      f'texto que será enviado:')
+print(documento())
 exibicao_lista_telefonica(contatos)
 
 # botão para iniciar
@@ -36,4 +37,3 @@ for link in lista_de_links:
         fechar_navegador()
         # buscando o documento com o texto e enviando
         busca_texto_e_envia()
-        
