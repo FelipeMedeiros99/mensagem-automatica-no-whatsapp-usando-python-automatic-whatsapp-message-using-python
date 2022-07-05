@@ -1,6 +1,7 @@
 # processo_de_envio
 
 def gerador_de_links(*lista_de_contatos):
+
     # juntando os contatos com o link
     lista_de_links = []
     for contato in lista_de_contatos:
@@ -20,7 +21,6 @@ def abrir_conversa(link, tempo = 0):
     from time import sleep
     # abrir chrome
     pyautogui.PAUSE = 1
-    # colar o link com o contato
     pyautogui.press('win')
     if tempo >= 2.5:
         sleep(tempo - 2.5)
@@ -29,6 +29,7 @@ def abrir_conversa(link, tempo = 0):
     pyautogui.press('enter')
     sleep(4)
     pyperclip.copy(link)
+    # colar o link com o contato
     pyautogui.hotkey('ctrl', 'v')
     pyautogui.press('enter')
     sleep(2)
