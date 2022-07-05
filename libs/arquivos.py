@@ -2,14 +2,15 @@ def documento():
     import os.path
     documento = os.path.join('C:\\', 'Users', 'User', 'Desktop', 'texto automatico.txt')
     documento_existe = os.path.isfile(documento)
+
     if documento_existe:
-        ler = open(documento, 'r')
-        return ler.read()
+        with open(documento, 'r', encoding='utf-8') as ler:
+            return ler.read()
 
     else:
-        open(documento, 'w')
-        print('Documento criado na área de trabalho, digite o texto automático lá e execute novamente')
-        input()
+        with open(documento, 'w'):
+            print('Documento criado na área de trabalho, digite o texto automático lá e execute novamente')
+            input()
 
 
 def busca_texto_e_envia():
@@ -34,5 +35,4 @@ def lista_de_contatos():
         open(contatos, 'w+')
         print('documento "contatos" criado na área de trabalho, adicione os contatos e execute novamente.')
         input()
-
-
+        
