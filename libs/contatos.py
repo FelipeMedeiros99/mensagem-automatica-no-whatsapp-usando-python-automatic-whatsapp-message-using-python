@@ -23,7 +23,7 @@ def exibe_lista_telefonica(lista):
 
 
 def lista_de_contatos():
-    from arquivos import lista_de_contatos as contatos
+    from libs.arquivos import lista_de_contatos as contatos
     lista_telefonica = []
     for numeros in contatos():
         numero = modelo_de_contato(numeros)
